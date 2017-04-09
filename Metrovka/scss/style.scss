@@ -1,0 +1,273 @@
+html, body, ul, ol, a
+{
+    margin: 0;
+    padding: 0;
+    color: #5a6872;
+    font-family: 'Open Sans', sans-serif, lighter;
+    text-decoration: none;
+}
+body{
+    background: rgba(90, 104, 114, 0.08);
+
+}
+
+h2{
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: 0.019em;
+}
+a{
+    letter-spacing: 0.03em;
+}
+.offer__finder{
+
+    margin: 0 auto;
+    background: #fff;
+    max-width: 890px;
+    .wrapper {
+        display: flex;
+        img {
+            padding-left: 86px;
+            padding-top: 44px;
+            margin-bottom: 40px;
+        }
+        .input {
+
+            max-width: 320px;
+            padding-top: 27px;
+            padding-left: 40px;
+            select{
+                width: 23.5em;
+                height: 3em;
+                margin-bottom: 32px;
+            }
+            .show__results{
+                display: block;
+                background-color: #30ae63;
+                border-radius: 2px;
+                width: 320px;
+                height: 40px;
+                line-height: 40px;
+                font-size: 0.8em;
+                color: #fff;
+                text-align: center;
+                letter-spacing: 1px;
+            }
+            /*.nav {
+                 list-style-type: none;
+                 display: flex;
+                 text-decoration: none;
+                 margin-bottom: 30px;
+                 li {
+                     padding-right: 15%;}
+
+                 li > a {
+                     position: relative;
+                     color: #000;
+                     text-decoration: none;
+                 }
+
+                 li > a:hover {
+                     color: #30AE63;
+                 }
+                 li > a:before {
+                     content: "";
+                     position: absolute;
+                     width: 100%;
+                     height: 2px;
+                     top:20px;
+                     bottom: 0;
+                     left: 0;
+                     background-color: #30AE63;
+                     visibility: hidden;
+                     -webkit-transform: scaleX(0);
+                     transform: scaleX(0);
+                     -webkit-transition: all 0.3s ease-in-out 0s;
+                     transition: all 0.3s ease-in-out 0s;
+                 }
+                 li > a:hover:before {
+                     visibility: visible;
+                     -webkit-transform: scaleX(1);
+                     transform: scaleX(1);
+                 }
+                 a {
+                     font-size: 0.875em;
+                 }
+             }*/
+        }
+    }
+}
+.offer__finder .nav {
+    list-style-type: none;
+    display: flex;
+    text-decoration: none;
+    margin-bottom: 30px;
+    li {
+        padding-right: 15%;}
+
+    li > a {
+        position: relative;
+        color: #000;
+        text-decoration: none;
+    }
+
+    li > a:hover {
+        color: #30AE63;
+    }
+    li > a:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        top:20px;
+        bottom: 0;
+        left: 0;
+        background-color: #30AE63;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+    li > a:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+    a {
+        font-size: 0.875em;
+    }
+}
+.best__offer, .last__offer{
+    margin: 0 auto;
+    background: #fff;
+    max-width: 890px;
+
+    .nav{
+        @extend .offer__finder .nav;
+    }
+    h2{
+        padding-top: 22px;
+        text-align: center;
+        margin-bottom: 26px;
+    }
+    .slider{
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        margin-bottom: 40px;
+        .slider_element{
+            align-items: baseline;
+            display: flex;
+            flex-direction: column;
+            padding: 0 6px 0 6px;
+            .cost{
+                display: flex;
+                font-size: 1em;
+                margin-bottom: 7px;
+
+
+            }
+
+            .square{
+                font-size: 0.75em;
+                color: #8C9BA5;
+                margin-bottom: 14px;
+            }
+            .location{
+                font-size: 0.75em;
+
+                img{
+                    margin-right: 7px;
+                }
+            }
+            .checked{
+                padding-left: 21px;
+                width: 18px;
+            }
+            .photo {
+
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    .show__best{
+        display: block;
+
+        border-top: rgba(90, 104, 114, 0.08) solid;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 0.8em;
+        color: #152935;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    .show__best {
+        position: relative;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .show__best:hover {
+        color: #30AE63;
+    }
+    .show__best:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+
+        bottom: 0;
+        left: 0;
+        background-color: #30AE63;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+    .show__best:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+.connection{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 890px;
+
+    .header{
+        padding-top: 63px;
+        margin-bottom: 20px;
+        h2{
+
+            margin:0 auto;
+            margin-bottom: 23px;
+            max-width: 500px;
+
+        }
+        p{
+            margin: 0 auto;
+            font-size: 0.875em;
+            max-width: 500px;
+            line-height: 20px;
+        }
+    }
+    .nav{
+        @extend .offer__finder .nav;
+    }
+    .content{
+        display: flex;
+        .telegram{
+            background: #fff;
+            max-width: 890px;
+            max-resolution: 100px;
+        }
+    }
+}
+
+
+
