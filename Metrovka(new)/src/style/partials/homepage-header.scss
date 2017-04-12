@@ -1,0 +1,127 @@
+.header{
+    background: $maincolor-green center bottom no-repeat ;
+    
+    width: 100%;
+    *{
+        color: #fff;
+    }
+}
+.homepage-header {
+    height: 301px;
+    background-image: url(../img/header-background.jpg);
+    &__nav{
+        padding-top: 21px;
+    }
+}
+
+.header__{
+
+    &container{
+        margin: 0 auto;
+        width: 890px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &nav{
+        display: flex;
+        align-items: stretch;
+    }
+
+    &nav-choose,
+    &nav-actions{
+        display: flex;
+    }
+
+    &nav-choose{
+        flex: 1;
+        justify-content: flex-start;
+    }
+
+    &nav-logo{
+        margin-right: 27px;
+    }
+
+    &checkbox_main-label , 
+    &select-label{
+        font-size: 14px;
+        letter-spacing: 2px;
+        display: flex;
+        flex-direction: column;
+        width: 28%;
+        font-weight: bold;
+        *{
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        }
+    }
+
+    &checkbox_main-label{
+        margin-left: 80px;
+        letter-spacing: 2px;
+    }
+
+
+    &select{
+        margin-top: 10px;
+        padding-left: 14px;
+        width: 344px;
+        color: $maincolor-text;
+        font-weight: bold;
+        *{
+           color: $maincolor-text;
+            font-weight: bold; 
+        }
+    }
+
+    &checkbox-block{
+        margin-top: 10px;
+    }
+
+    &form{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &form-name{
+        font-size: 32px;
+        margin-top: 70px;
+        letter-spacing: 0.35px;
+        margin-bottom: 45px;
+    }
+    &__signin{
+    margin-right: 0;
+    }
+
+}
+
+.header__nav-actions .nav__post{
+        
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 0;
+    a{
+        padding: 5px 20px;
+        &.active, &:hover, &:active, &:focus{
+            background-color: rgba(0, 0, 0, 0.1);
+            border: none;
+            padding: 5px 20px;
+        }
+    }
+
+    img{
+        margin-right: 5px;
+    }
+}
+
+.header .btn-secondary {
+    color: $maincolor-green;
+
+    &:hover{
+        color: #fff;
+    }
+}
+
+
+
